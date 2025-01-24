@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+}
+</style>
+</head>
+<body>
+<title>SHIV</title>
+<h2>Table With Border</h2>
+
+
+
+<table style="width:100%">
+  <tr>
+    <th></th>
+    <th></th> 
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+<form action="/submit" method="post">
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone"><br><br>
+    
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+    <legend>Select Your Subjects:</legend>
+
+            <input type="checkbox" 
+                   name="check" 
+                   id="checkbox1" 
+                   value="html" checked>
+            <label for="checkbox1">HTML</label>
+            <br>
+    
+            <input type="radio" 
+               id="Netflix" 
+               name="brand" 
+               value="Netflix">
+        <label for="Netflix">Netflix</label>
+
+        <input type="radio" 
+               id="Netflix" 
+               name="brand" 
+               value="Prime">
+        <label for="Netflix">Prime</label>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
+
